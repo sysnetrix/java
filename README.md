@@ -1,34 +1,26 @@
 # Hello world with Java :coffee:
 
-This is a simple **"Hello world"** done with **Java** programming language.
+This is a **"Hello world"** program code written in **Java** programming language.
 
 ## Source code
 
 This is the source code of the program:
 
 ```java
-public class HelloWorld {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+public class HelloWorld 
+{
+  public static void main(String[] args) 
+  {
+    System.out.format("%s", helloWorld());
+  }
+
+  public static String helloWorld()
+  {
+    String helloWorld = "Hello world!";
+    return helloWorld;
   }
 }
 ```
 
-Notice that `System.out.println("Hello world!");` shows the string `"Hello world!"` on the screen.
-
-## Compile program
-
-To compile the "Hello World" program, type the following:
-
-```console
-javac HelloWorld.java
-```
-
-## Excute the program
-
-To execute the program, type this:
-
-```console
-java HelloWorld
-```
-
+Notice that `System.out.format("%s", helloWorld());` prints the string `"Hello world!"` on the screen.
+It is simply calling the method **helloWorld()** which return the string Hello world! and it prints it to the screen.
